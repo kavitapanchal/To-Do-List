@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px;
+}
+
+button#addTodoBtn {
+    background-color: #5cb85c;
+}
+
+button#addTodoBtn:hover {
+    background-color: #4cae4c;
+}
+
+.todoItem {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.todoItem.done {
+    background-color: #d4edda;
+    color: #999;
+}
+
+.todoContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.todoTitle {
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+}
+
+.todoDate {
+    color: #666;
+}
+
+button.removeBtn {
+    background-color: #d9534f;
+}
+
+button.removeBtn:hover {
+    background-color: #c9302c;
+}
+
+button.editBtn {
+    background-color: #007bff;
+}
+
+button.editBtn:hover {
+    background-color: #0056b3;
+}
+
+button.markDoneBtn {
+    background-color: #28a745;
+}
+
+button.markDoneBtn:hover {
+    background-color: #218838;
+}
+.todoItem.done .todoTitle {
+    text-decoration: line-through;
+    color: #999;
+}
